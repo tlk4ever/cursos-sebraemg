@@ -15,6 +15,7 @@ class CreateClassThemeTable extends Migration {
         Schema::create('class-theme', function(Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->text('description')->nullable();
             $table->integer('category_id')->unsigned();;
             $table->foreign('category_id')->references('id')->on('category');
             $table->decimal('price', 10, 2);
