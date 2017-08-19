@@ -38,35 +38,39 @@ body {
   margin-top: 20px;
 }
 /* line 32, ../sass/sass/css.scss */
+#meio .invisivel {
+  display: none;
+}
+/* line 35, ../sass/sass/css.scss */
 #meio .square {
   margin: 10px 0;
 }
-/* line 35, ../sass/sass/css.scss */
+/* line 38, ../sass/sass/css.scss */
 #meio .bloco {
   color: #999;
   font-size: 14px;
   padding: 10px 0px;
   background: #fff;
 }
-/* line 40, ../sass/sass/css.scss */
+/* line 43, ../sass/sass/css.scss */
 #meio .bloco p {
   text-indent: 15px;
 }
-/* line 43, ../sass/sass/css.scss */
+/* line 46, ../sass/sass/css.scss */
 #meio .bloco .titulo {
   color: black;
   font-size: 16px;
   margin: 0;
 }
-/* line 48, ../sass/sass/css.scss */
+/* line 51, ../sass/sass/css.scss */
 #meio .bloco .categoria {
   margin-bottom: 0;
 }
-/* line 51, ../sass/sass/css.scss */
+/* line 54, ../sass/sass/css.scss */
 #meio .bloco .cidade {
   margin-top: 0;
 }
-/* line 54, ../sass/sass/css.scss */
+/* line 57, ../sass/sass/css.scss */
 #meio .bloco .data {
   border-top: 1px solid #999;
   padding: 10px 10px 5px 0;
