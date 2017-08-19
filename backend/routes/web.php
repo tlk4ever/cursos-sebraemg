@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $classTheme = new App\Http\Controllers\ClassThemeController();
+    return response()->json($classTheme->index());
 });

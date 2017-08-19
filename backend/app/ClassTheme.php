@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class ClassTheme extends Model
 {
-    protected $table = 'class-theme';
+    protected $table = 'class_theme';
 }

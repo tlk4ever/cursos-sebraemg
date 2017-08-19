@@ -12,7 +12,7 @@ class CreateClassThemeTable extends Migration {
      * @return void
      */
     public function up() {
-        Schema::create('class-theme', function(Blueprint $table) {
+        Schema::create('class_theme', function(Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->text('description')->nullable();
@@ -35,7 +35,7 @@ class CreateClassThemeTable extends Migration {
      * @return void
      */
     public function down() {
-        Schema::dropIfExists('class-theme');
+        Schema::dropIfExists('class_theme');
     }
 
 }
