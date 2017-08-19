@@ -1,0 +1,60 @@
+$corCinza : #999;
+$corBranco:#fff;
+body{
+    background: #eee;
+    font-family: 'Roboto'
+}
+.topo{
+    .nav-wrapper{
+        padding: 5px 15px;
+        form {
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: $corBranco;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color: $corBranco;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color: $corBranco;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                color: $corBranco;
+            }
+            .label-icon{
+                top: -1rem;
+            }
+        }
+    }
+}
+
+#meio{
+    margin-top: 20px;
+    .square{
+        margin: 10px 0;
+    }
+    .bloco{
+        color:$corCinza;
+        font-size: 14px;
+        padding: 10px 0px;
+        background: #fff;
+        p{
+            text-indent: 15px;
+        }
+        .titulo{
+            color:black;
+            font-size: 16px;
+            margin: 0;
+        }
+        .categoria{
+            margin-bottom: 0
+        }
+        .cidade{
+            margin-top: 0
+        }
+        .data{
+            border-top: 1px solid $corCinza;
+            padding: 10px 10px 5px 0;
+            margin-bottom: 0;
+        }
+    }
+}

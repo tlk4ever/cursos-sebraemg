@@ -1,0 +1,74 @@
+/* line 3, ../sass/sass/css.scss */
+body {
+  background: #eee;
+  font-family: "Roboto";
+}
+
+/* line 8, ../sass/sass/css.scss */
+.topo .nav-wrapper {
+  padding: 5px 15px;
+}
+/* line 11, ../sass/sass/css.scss */
+.topo .nav-wrapper form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+/* line 14, ../sass/sass/css.scss */
+.topo .nav-wrapper form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+/* line 17, ../sass/sass/css.scss */
+.topo .nav-wrapper form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+/* line 20, ../sass/sass/css.scss */
+.topo .nav-wrapper form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+/* line 23, ../sass/sass/css.scss */
+.topo .nav-wrapper form .label-icon {
+  top: -1rem;
+}
+
+/* line 30, ../sass/sass/css.scss */
+#meio {
+  margin-top: 20px;
+}
+/* line 32, ../sass/sass/css.scss */
+#meio .square {
+  margin: 10px 0;
+}
+/* line 35, ../sass/sass/css.scss */
+#meio .bloco {
+  color: #999;
+  font-size: 14px;
+  padding: 10px 0px;
+  background: #fff;
+}
+/* line 40, ../sass/sass/css.scss */
+#meio .bloco p {
+  text-indent: 15px;
+}
+/* line 43, ../sass/sass/css.scss */
+#meio .bloco .titulo {
+  color: black;
+  font-size: 16px;
+  margin: 0;
+}
+/* line 48, ../sass/sass/css.scss */
+#meio .bloco .categoria {
+  margin-bottom: 0;
+}
+/* line 51, ../sass/sass/css.scss */
+#meio .bloco .cidade {
+  margin-top: 0;
+}
+/* line 54, ../sass/sass/css.scss */
+#meio .bloco .data {
+  border-top: 1px solid #999;
+  padding: 10px 10px 5px 0;
+  margin-bottom: 0;
+}
