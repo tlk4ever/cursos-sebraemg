@@ -1,7 +1,6 @@
 var search = document.querySelector("#search");
 
 search.addEventListener('input',function(){
-    console.log('test');
     var blocos = document.querySelectorAll(".square");
     
     if (this.value.length > 0) {

@@ -9,25 +9,51 @@
         <link rel="stylesheet" href="./css/css.css" type="text/css"/>
     </head>
     <body>
-        <nav class="light-blue lighten-1 topo">
-            <div class="nav-wrapper container">
-                <form class="row">
-                    <div class="col s6 offset-s3 input-field  light-blue lighten-2">
-                        <input id="search" name="filtro" type="search" required placeholder="Pesquisar">
-                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
-                </form>
+        <div id="paginaUm">
+            <nav class="light-blue lighten-1 topo">
+                <div class="nav-wrapper container">
+                    <form class="row">
+                        <div class="col s6 offset-s3 input-field  light-blue lighten-2">
+                            <input id="search" name="filtro" type="search" required placeholder="Pesquisar">
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+
+            </nav>
+            <div class="container" id="meio">
+                <div class="row"></div>
             </div>
-
-        </nav>
-        <div class="container" id="meio">
-            <div class="row"></div>
         </div>
-
+        <div id="paginaDois">
+            <nav class="light-blue lighten-1 topo">
+                <i class="tiny material-icons goBack">keyboard_backspace </i>
+            </nav>
+            
+            <div class="container" id="detalhe">
+                <div class="row">
+                    <div class="col lx8 l8 offset-lx2 offset-l2 conteudo">
+                        <p class="titulo"><span></span></p>
+                        <p class="descricao"><span></span></p>
+                        <p class="data"><i class="tiny material-icons">event</i><span></span></p>
+                        <p class="hora"><i class="tiny material-icons">access_time</i><span></span></p>
+                        <a href="" class="local"><i class="tiny material-icons">location_on</i><span></span></a>
+                        <p class="preco"><i class="tiny material-icons">attach_money</i><span></span></p>
+                        <p class="categoria"><i class="tiny material-icons">label</i><span></span></p>
+                        <p class="consultor"><span></span></p>
+                        <div class="inscricao">
+                            <a class="center waves-effect orange btn black-text">button</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
         <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="./node_modules/materialize-css/dist/js/materialize.js"></script>
         <script type="text/javascript" src="js/load.js"></script>
         <script type="text/javascript" src="js/filtro.js"></script>
+        <script type="text/javascript" src="js/detalhe.js"></script>
     </body>
 </html>

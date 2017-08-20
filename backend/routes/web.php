@@ -15,3 +15,8 @@ Route::get('/', function () {
     $classTheme = new App\Http\Controllers\ClassThemeController();
     return response()->json($classTheme->index());
 });
+
+Route::get('detalhe/{id}',function($id){
+    $classTheme = new App\Http\Controllers\ClassThemeController();
+    return response()->json($classTheme->detalhe($id));
+});

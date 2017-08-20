@@ -24,6 +24,8 @@ window.addEventListener("load", function () {
                 bloco.appendChild(cidade);
                 bloco.appendChild(data);
                 square.appendChild(bloco);
+                square.id = row.id;
+                square.setAttribute('onclick','detalhe('+row.id+')');
                 div.appendChild(square);
             });
         }

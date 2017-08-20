@@ -2,7 +2,11 @@ $corCinza : #999;
 $corBranco:#fff;
 body{
     background: #eee;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    .visivel{
+
+    }
+
 }
 .topo{
     .nav-wrapper{
@@ -34,6 +38,7 @@ body{
     }
     .square{
         margin: 10px 0;
+        cursor: pointer;
     }
     .bloco{
         color:$corCinza;
@@ -58,6 +63,33 @@ body{
             border-top: 1px solid $corCinza;
             padding: 10px 10px 5px 0;
             margin-bottom: 0;
+        }
+    }
+}
+
+#paginaDois{
+    display:none;
+    .goBack{
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    #detalhe .conteudo{
+        background: $corBranco;   
+        .titulo{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .descricao,.data, .categoria, .local,.preco,.consultor,.hora{
+            font-size: 16px;
+            color: $corCinza;
+        }
+        p i, a i {
+            margin-right: 10px
+        }
+        .inscricao{
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
     }
 }
