@@ -69,27 +69,46 @@ body{
 
 #paginaDois{
     display:none;
+    .topo{
+        height: 128px;
+    }
     .goBack{
         margin-left: 15px;
         cursor: pointer;
     }
-    #detalhe .conteudo{
-        background: $corBranco;   
-        .titulo{
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .descricao,.data, .categoria, .local,.preco,.consultor,.hora{
-            font-size: 16px;
-            color: $corCinza;
-        }
-        p i, a i {
-            margin-right: 10px
-        }
-        .inscricao{
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: bold;
+    #detalhe{
+        margin-top: -64px;
+        .conteudo{
+            background: $corBranco;   
+            .titulo{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .descricao,.data, .categoria, .local,.preco,.consultor,.hora{
+                font-size: 16px;
+                color: $corCinza;
+            }
+            p i, a i {
+                margin-right: 10px
+            }
+            .inscricao{
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .consultor{
+                line-height:40px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                    float: left;
+                }
+                span{
+                    margin-left: 15px;
+                }
+            }
         }
     }
 }

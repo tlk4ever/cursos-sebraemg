@@ -7,10 +7,12 @@ function detalhe(id) {
         var row = JSON.parse(xhr.responseText);
         montarTag('titulo', row.title);
         montarTag('descricao', row.description);
-        montarTag('data', row.start);
-        montarTag('hora', row.start);
-        montarTag('local', row.address.street);
-        montarTag('preco', row.price);
+        var dataHora = row.start.split(' ');
+        montarTag('data', dataHora[0]);
+        montarTag('hora', dataHora[1]);
+        var endereco = row.address.street + " " + row.address.number + ", " + row.address.neighborhood + " " + row.address.city;
+        montarTag('local', endereco);
+        montarTag('preco', "R$ " + row.price);
         montarTag('categoria', row.category);
         montarTag('consultor', row.consultant.name);
 
@@ -30,13 +32,13 @@ var goBack = document.querySelector('#paginaDois .goBack');
 
 goBack.addEventListener('click', function () {
     montarTag('titulo', '');
-        montarTag('descricao', '');
-        montarTag('data', '');
-        montarTag('hora', '');
-        montarTag('local', '');
-        montarTag('preco', '');
-        montarTag('categoria', '');
-        montarTag('consultor', '');
+    montarTag('descricao', '');
+    montarTag('data', '');
+    montarTag('hora', '');
+    montarTag('local', '');
+    montarTag('preco', '');
+    montarTag('categoria', '');
+    montarTag('consultor', '');
     $('#paginaUm').css('display', 'block');
     $('#paginaDois').css('display', 'none');
 });

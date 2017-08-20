@@ -83,31 +83,55 @@ body {
   display: none;
 }
 /* line 72, ../sass/sass/css.scss */
+#paginaDois .topo {
+  height: 128px;
+}
+/* line 75, ../sass/sass/css.scss */
 #paginaDois .goBack {
   margin-left: 15px;
   cursor: pointer;
 }
-/* line 76, ../sass/sass/css.scss */
+/* line 79, ../sass/sass/css.scss */
+#paginaDois #detalhe {
+  margin-top: -64px;
+}
+/* line 81, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo {
   background: #fff;
 }
-/* line 78, ../sass/sass/css.scss */
+/* line 83, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .titulo {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 82, ../sass/sass/css.scss */
+/* line 87, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .descricao, #paginaDois #detalhe .conteudo .data, #paginaDois #detalhe .conteudo .categoria, #paginaDois #detalhe .conteudo .local, #paginaDois #detalhe .conteudo .preco, #paginaDois #detalhe .conteudo .consultor, #paginaDois #detalhe .conteudo .hora {
   font-size: 16px;
   color: #999;
 }
-/* line 86, ../sass/sass/css.scss */
+/* line 91, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo p i, #paginaDois #detalhe .conteudo a i {
   margin-right: 10px;
 }
-/* line 89, ../sass/sass/css.scss */
+/* line 94, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .inscricao {
   text-align: center;
   margin-bottom: 20px;
   font-weight: bold;
+}
+/* line 99, ../sass/sass/css.scss */
+#paginaDois #detalhe .conteudo .consultor {
+  line-height: 40px;
+}
+/* line 101, ../sass/sass/css.scss */
+#paginaDois #detalhe .conteudo .consultor img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+  float: left;
+}
+/* line 108, ../sass/sass/css.scss */
+#paginaDois #detalhe .conteudo .consultor span {
+  margin-left: 15px;
 }
