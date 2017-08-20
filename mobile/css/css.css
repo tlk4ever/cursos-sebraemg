@@ -1,129 +1,157 @@
-/* line 3, ../sass/sass/css.scss */
+/* line 16, ../sass/sass/css.scss */
 body {
   background: #eee;
   font-family: 'Roboto';
 }
 
-/* line 12, ../sass/sass/css.scss */
+/* line 25, ../sass/sass/css.scss */
+.topo .titulo {
+  margin-left: 15px;
+  font-size: 18px;
+  float: left;
+}
+/* line 30, ../sass/sass/css.scss */
 .topo .nav-wrapper {
   padding: 5px 15px;
 }
-/* line 15, ../sass/sass/css.scss */
+/* line 33, ../sass/sass/css.scss */
 .topo .nav-wrapper form ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #fff;
 }
-/* line 18, ../sass/sass/css.scss */
+/* line 36, ../sass/sass/css.scss */
 .topo .nav-wrapper form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-/* line 21, ../sass/sass/css.scss */
+/* line 39, ../sass/sass/css.scss */
 .topo .nav-wrapper form :-ms-input-placeholder {
   /* IE 10+ */
   color: #fff;
 }
-/* line 24, ../sass/sass/css.scss */
+/* line 42, ../sass/sass/css.scss */
 .topo .nav-wrapper form :-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-/* line 27, ../sass/sass/css.scss */
+/* line 45, ../sass/sass/css.scss */
 .topo .nav-wrapper form .label-icon {
   top: -1rem;
 }
 
-/* line 34, ../sass/sass/css.scss */
+/* line 52, ../sass/sass/css.scss */
 #meio {
   margin-top: 20px;
 }
-/* line 36, ../sass/sass/css.scss */
+/* line 54, ../sass/sass/css.scss */
 #meio .invisivel {
   display: none;
 }
-/* line 39, ../sass/sass/css.scss */
+/* line 57, ../sass/sass/css.scss */
 #meio .square {
   margin: 10px 0;
   cursor: pointer;
 }
-/* line 43, ../sass/sass/css.scss */
+/* line 61, ../sass/sass/css.scss */
 #meio .bloco {
   color: #999;
   font-size: 14px;
   padding: 10px 0px;
   background: #fff;
 }
-/* line 48, ../sass/sass/css.scss */
+/* line 66, ../sass/sass/css.scss */
 #meio .bloco p {
   text-indent: 15px;
 }
-/* line 51, ../sass/sass/css.scss */
+/* line 69, ../sass/sass/css.scss */
 #meio .bloco .titulo {
   color: black;
   font-size: 16px;
   margin: 0;
 }
-/* line 56, ../sass/sass/css.scss */
+/* line 74, ../sass/sass/css.scss */
 #meio .bloco .categoria {
   margin-bottom: 0;
 }
-/* line 59, ../sass/sass/css.scss */
+/* line 77, ../sass/sass/css.scss */
 #meio .bloco .cidade {
   margin-top: 0;
 }
-/* line 62, ../sass/sass/css.scss */
+/* line 80, ../sass/sass/css.scss */
 #meio .bloco .data {
   border-top: 1px solid #999;
   padding: 10px 10px 5px 0;
   margin-bottom: 0;
 }
 
-/* line 70, ../sass/sass/css.scss */
+/* line 88, ../sass/sass/css.scss */
 #paginaDois {
   display: none;
 }
-/* line 72, ../sass/sass/css.scss */
+/* line 90, ../sass/sass/css.scss */
 #paginaDois .topo {
   height: 128px;
 }
-/* line 75, ../sass/sass/css.scss */
+/* line 92, ../sass/sass/css.scss */
+#paginaDois .topo .titulo {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  /* line 92, ../sass/sass/css.scss */
+  #paginaDois .topo .titulo {
+    display: block;
+  }
+}
+/* line 99, ../sass/sass/css.scss */
 #paginaDois .goBack {
   margin-left: 15px;
   cursor: pointer;
 }
-/* line 79, ../sass/sass/css.scss */
+/* line 103, ../sass/sass/css.scss */
 #paginaDois #detalhe {
   margin-top: -64px;
 }
-/* line 81, ../sass/sass/css.scss */
+@media only screen and (max-width: 600px) {
+  /* line 103, ../sass/sass/css.scss */
+  #paginaDois #detalhe {
+    margin-top: 0px;
+  }
+}
+/* line 108, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo {
   background: #fff;
 }
-/* line 83, ../sass/sass/css.scss */
+/* line 110, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .titulo {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 87, ../sass/sass/css.scss */
+@media only screen and (max-width: 600px) {
+  /* line 110, ../sass/sass/css.scss */
+  #paginaDois #detalhe .conteudo .titulo {
+    display: none;
+  }
+}
+/* line 117, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .descricao, #paginaDois #detalhe .conteudo .data, #paginaDois #detalhe .conteudo .categoria, #paginaDois #detalhe .conteudo .local, #paginaDois #detalhe .conteudo .preco, #paginaDois #detalhe .conteudo .consultor, #paginaDois #detalhe .conteudo .hora {
   font-size: 16px;
   color: #999;
 }
-/* line 91, ../sass/sass/css.scss */
+/* line 121, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo p i, #paginaDois #detalhe .conteudo a i {
   margin-right: 10px;
 }
-/* line 94, ../sass/sass/css.scss */
+/* line 124, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .inscricao {
   text-align: center;
   margin-bottom: 20px;
   font-weight: bold;
 }
-/* line 99, ../sass/sass/css.scss */
+/* line 129, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .consultor {
   line-height: 40px;
 }
-/* line 101, ../sass/sass/css.scss */
+/* line 131, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .consultor img {
   width: 40px;
   height: 40px;
@@ -131,7 +159,7 @@ body {
   border-radius: 100%;
   float: left;
 }
-/* line 108, ../sass/sass/css.scss */
+/* line 138, ../sass/sass/css.scss */
 #paginaDois #detalhe .conteudo .consultor span {
   margin-left: 15px;
 }

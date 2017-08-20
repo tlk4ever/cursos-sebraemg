@@ -5,16 +5,17 @@ function detalhe(id) {
     xhr.open("GET", "../backend/public/index.php/detalhe/" + id);
     xhr.addEventListener("load", function () {
         var row = JSON.parse(xhr.responseText);
-        montarTag('titulo', row.title);
-        montarTag('descricao', row.description);
+        montarTag('#detalhe .titulo span', row.title);
+        montarTag('#paginaDois .topo .titulo', row.title);
+        montarTag('#detalhe .descricao span', row.description);
         var dataHora = row.start.split(' ');
-        montarTag('data', dataHora[0]);
-        montarTag('hora', dataHora[1]);
+        montarTag('#detalhe .data span', dataHora[0]);
+        montarTag('#detalhe .hora span', dataHora[1]);
         var endereco = row.address.street + " " + row.address.number + ", " + row.address.neighborhood + " " + row.address.city;
-        montarTag('local', endereco);
-        montarTag('preco', "R$ " + row.price);
-        montarTag('categoria', row.category);
-        montarTag('consultor', row.consultant.name);
+        montarTag('#detalhe .local span', endereco);
+        montarTag('#detalhe .preco span', "R$ " + row.price);
+        montarTag('#detalhe .categoria span', row.category);
+        montarTag('#detalhe .consultor span', row.consultant.name);
 
         $('#paginaUm').css('display', 'none');
         $('#paginaDois').css('display', 'block');
@@ -24,21 +25,22 @@ function detalhe(id) {
 }
 
 function montarTag(classe, texto) {
-    var tag = document.querySelector('#detalhe .' + classe + ' span');
+    var tag = document.querySelector(classe);
     tag.textContent = texto;
 }
 
 var goBack = document.querySelector('#paginaDois .goBack');
 
 goBack.addEventListener('click', function () {
-    montarTag('titulo', '');
-    montarTag('descricao', '');
-    montarTag('data', '');
-    montarTag('hora', '');
-    montarTag('local', '');
-    montarTag('preco', '');
-    montarTag('categoria', '');
-    montarTag('consultor', '');
+    montarTag('#detalhe .titulo span', '');
+    montarTag('#paginaDois .topo .titulo', '');
+    montarTag('#detalhe .descricao span', '');
+    montarTag('#detalhe .data span', '');
+    montarTag('#detalhe .hora span', '');
+    montarTag('#detalhe .local span', '');
+    montarTag('#detalhe .preco span', '');
+    montarTag('#detalhe .categoria span', '');
+    montarTag('#detalhe .consultor span', '');
     $('#paginaUm').css('display', 'block');
     $('#paginaDois').css('display', 'none');
 });
